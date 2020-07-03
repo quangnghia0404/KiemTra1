@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/DangKyFragment">
+
+    <fragment
+        android:id="@+id/DangKyFragment"
+        android:name="vn.edu.ntu.quangnghia.kiemtra1.DangKyFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_DangKyFragment_to_KetQuaFragment"
+            app:destination="@id/KetQuaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/KetQuaFragment"
+        android:name="vn.edu.ntu.quangnghia.kiemtra1.ThongBaoFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_KetQuaFragment_to_DangKyFragment"
+    app:destination="@id/DangKyFragment" />
+</fragment>
+</navigation>
